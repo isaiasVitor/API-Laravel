@@ -100,7 +100,7 @@ class UserController extends Controller
             $file->user_id = $user->id;
             $file->save();
             $data['result'] = 'sucess';
-            $data['image_url'] = 'http://transporteseguro.servehttp.com/API-Laravel/public/storage/perfilPhoto/'.$user->id.'.jpg';
+            $data['image_url'] = 'http://18.228.137.119/API-Laravel/public/storage/perfilPhoto/'.$user->id.'.jpg';
      
         
             return response()->json([
@@ -128,7 +128,7 @@ class UserController extends Controller
                 $fileName = $file->name;
                 
                 return response()->json([
-                    'file' => 'http://transporteseguro.servehttp.com/API-Laravel/public/storage/perfilPhoto/'.$fileName
+                    'file' => 'http://18.228.137.119/API-Laravel/public/storage/perfilPhoto/'.$fileName
                 ],200);
             }
         }else{
